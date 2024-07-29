@@ -1,0 +1,107 @@
+*{ 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+} 
+
+body{ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{  
+    height: 100px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    background-color: rgba(230,178,178);
+}
+
+.logo{ 
+    width: 65px; 
+    height: 50px; 
+    border-radius: 50%; 
+    background-color: rgba(1, 1, 24, 0.664); 
+    position: relative;
+} 
+
+.logo > img{ 
+    position: absolute; 
+    width: 100%; 
+    border-radius: 50%;
+} 
+
+ul{ 
+    display: flex; 
+    list-style-type: none; 
+    align-items: center;
+}  
+
+ul li a{ 
+    padding: 0 20px; 
+    text-decoration: none; 
+    color: #3a3a3a;  
+    display: inline-block; 
+} 
+
+li a::after{ 
+    content:''; 
+    display: block;
+    height: 4px; 
+    width: 0px; 
+    background: #c4c4f7; 
+    transition: all .5s  
+} 
+
+li a:hover::after{ 
+    width: 100%; 
+} 
+
+main{ 
+    display: flex; 
+    background-color: rgba(254,250,238,255); 
+    height: calc(100vh - 100px); 
+    align-items: center; 
+    justify-content: center; 
+} 
+
+.hero-image{ 
+    max-width: 670px; 
+    height: 450px; 
+} 
+
+.left-content{ 
+    width: 30%; 
+} 
+
+main h2{ 
+    text-transform: uppercase; 
+    font-weight: 800;
+} 
+
+main p{ 
+    font-size: 14px; 
+    font-weight: 400; 
+    margin: 25px 0; 
+    text-align: justify; 
+} 
+
+.cta{ 
+    padding: 15px 20px; 
+    background-color: rgba(204,45,68,255); 
+    outline: none; 
+    border: none; 
+    font-weight: 700; 
+    border-radius: 50px; 
+    text-transform: capitalize; 
+} 
+
+.entrar-btn{ 
+    padding: 10px 20px; 
+    background-color: rgba(1,0,4,255); 
+    color: beige; 
+    outline: none; 
+    border: none; 
+    font-weight: 700; 
+    border-radius: 50px; 
+    text-transform: capitalize; 
+}
